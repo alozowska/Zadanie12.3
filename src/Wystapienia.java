@@ -13,9 +13,9 @@ public class Wystapienia {
         for (int i = 0; i < tablica.length; i++) {
           tablica[i]=scanner.nextInt();
           Integer singelNumber=tablica[i];
-          licznik=(Integer)set.get(singelNumber);
+          licznik=set.get(singelNumber);
           if (licznik==null){
-              licznik=Integer.valueOf(0);
+              licznik=0;
           }
           licznik++;
           set.put(singelNumber,licznik);
